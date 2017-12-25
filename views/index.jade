@@ -5,21 +5,38 @@ block content
 		.row
 			.col-md-4.zone.vice-wrapper
 				.row
-					.col-md-4.zone.side-wrapper
+					.col-md-5.zone.side-wrapper
 						.logo-box
 							a Xavier'Blog
 							br
 							p independent
 						hr
-						.tag-box
-							span tags
-							span(aria-hidden='true').glyphicon.glyphicon-chevron-left.tag-back
-							.tag-list
-								span 123
-
-					.col-md-8.zone.brief-wrapper
+						.row.tag-header
+							.col-md-6.tag-title
+								span Tag
+							.col-md-6.tag-back
+								span(aria-hidden='true').glyphicon.glyphicon-chevron-left.tag-back
+						.row.tag-box
+							span.tag NodeJs
+							span.tag Express
+							span.tag Bootstrap
+							span.tag Vue
+							span.tag MongoDB
+						hr
+						div.row
+							.col-md-12.date-time-picker#datetimepicker
+						hr
+						.row.copyright-box
+							p © Copyright 2017 - 2018 
+								a(href='localhost:3000' title='Xavier') Xavier
+					.col-md-7.zone.brief-wrapper
 						p brief
 			.col-md-7.zone.content-wrapper
 				p content
 			.col-md-1.zone.helper-wrapper
 				p helper
+	script(type='text/javascript').
+		$('#datetimepicker').datetimepicker({
+			startView: 3,
+			minView: 3
+		});

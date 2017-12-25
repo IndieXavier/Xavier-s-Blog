@@ -22,14 +22,48 @@ body {
 	margin: 10px 0;
 }
 
+.tag-header {
+	margin-top: 30px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.tag-title {
+	padding: 0px 20px;
+	text-align: left;
+}
+
 .tag-back {
-	float: right;
+	text-align: right;
 	cursor: pointer;
 }
 
-.tag-list {
-	clear: both;
+.tag-box {
 	margin: 10px 0;
-	border: 1px solid #eee;
-	border-radius: 5px;
+}
+
+.tag {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    padding: 0 5px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.copyright-box {
+	margin: 10px 20px;
+}
+
+.copyright-box p {
+	text-align: center;
+	font-size: 12px;
+}
+
+.copyright-box a {
+	text-align: center;
+	text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
 }
