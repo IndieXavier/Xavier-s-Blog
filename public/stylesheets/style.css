@@ -12,6 +12,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+i {
+	margin-right: 5px;
+}
+
 .zone {
 	border-right: 1px solid #eee;
 }
@@ -28,13 +32,17 @@ body {
     overflow-x: hidden;
 }
 
+.helper-wrapper {
+	height: 742px;
+}
+
 .logo-box {
 	margin: 50px 0;
 	text-align: center;
 }
 
 .logo-box a {
-    color: #000!important;
+    color: #000 !important;
     font-size: 24px;
     text-decoration: none;
     cursor: pointer;	
@@ -97,15 +105,13 @@ body {
 .brief h4 {
 	margin-top: 20px;
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 .brief p {
 	margin: 15px 0;
 	font-size: 14px;
-}
-
-.brief i {
-	margin-right: 5px;
+	cursor: pointer;
 }
 
 .content-wrapper h1 {
@@ -114,16 +120,41 @@ body {
 
 .content-header-box {
 	margin: 0 0 20px 0;
+	text-align: left;
 }
 
-.content-header-box i {
-	margin-right: 5px;
+.content-header-box span {
+	cursor: pointer;
 }
 
 .content-header-box span {
 	margin-right: 20px;
 }
 
+.content-header-date {
+	text-align: right;
+	color: #969696;
+}
+
 .content {
 	text-indent: 2em;
+}
+
+#up-to-top {
+	position: fixed !important;
+	bottom: 0px;
+	position: absolute;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.up-to-top {
+	height: 30px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.line {
+	height: 20px;
+	border-bottom: 1px solid #eee;
 }
