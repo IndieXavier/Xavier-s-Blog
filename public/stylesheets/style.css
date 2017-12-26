@@ -22,6 +22,12 @@ body {
     overflow-x: hidden;
 }
 
+.content-wrapper {
+	height: 742px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 .logo-box {
 	margin: 50px 0;
 	text-align: center;
@@ -89,6 +95,7 @@ body {
 }
 
 .brief h4 {
+	margin-top: 20px;
 	text-decoration: underline;
 }
 
@@ -99,4 +106,24 @@ body {
 
 .brief i {
 	margin-right: 5px;
+}
+
+.content-wrapper h1 {
+	margin: 20px 0 20px 0;
+}
+
+.content-header-box {
+	margin: 0 0 20px 0;
+}
+
+.content-header-box i {
+	margin-right: 5px;
+}
+
+.content-header-box span {
+	margin-right: 20px;
+}
+
+.content {
+	text-indent: 2em;
 }
