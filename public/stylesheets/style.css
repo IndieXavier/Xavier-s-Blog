@@ -8,26 +8,47 @@
     background: #FF0000;
 }
 
+html {
+	height: 100%;
+}
+
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	height: 100%;
+ 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 i {
 	margin-right: 5px;
 }
 
+.jumbotron{
+	height: 100%;
+	margin: 0;
+	background: url('/images/jumbotron.jpg');
+	background-position: center center;
+}
+
+.container-fluid {
+	display: none;
+}
+
+.hull-height {
+	height: 100%;
+}
+
 .zone {
+	height: 100%;
 	border-right: 1px solid #eee;
 }
 
 .brief-wrapper {
-	height: 742px;
+	height: 100%;
     overflow: scroll;
     overflow-x: hidden;
 }
 
 .content-wrapper {
-	height: 742px;
+	height: 100%;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -75,7 +96,37 @@ i {
 .tag {
     display: inline-block;
     margin: 5px 5px 5px 0;
-    padding: 0 5px;
+    padding: 0 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.date-header {
+	margin-top: 30px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.date-title {
+	padding: 0px 20px;
+	text-align: left;
+}
+
+.date-back {
+	text-align: right;
+	cursor: pointer;
+}
+
+.date-box {
+	margin: 10px 0;
+}
+
+.date {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    padding: 0 10px;
     border: 1px solid #eee;
     border-radius: 10px;
     text-align: center;
@@ -84,15 +135,14 @@ i {
 
 .copyright-box {
 	margin: 10px 20px;
+	text-align: center;
 }
 
 .copyright-box p {
-	text-align: center;
 	font-size: 12px;
 }
 
 .copyright-box a {
-	text-align: center;
 	text-decoration: none;
     font-size: 12px;
     cursor: pointer;

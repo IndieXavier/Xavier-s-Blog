@@ -1,15 +1,16 @@
 extends layout
 
 block content
-	.container-fluid
-		.row
+	.jumbotron
+	.container-fluid.hull-height
+		.row.hull-height
 			.col-md-4.zone.vice-wrapper
-				.row
+				.row.hull-height
 					.col-md-5.zone.side-wrapper
 						.logo-box
 							a Xavier'Blog
 							br
-							p independent
+							p Minimalist
 						hr
 						.row.tag-header
 							.col-md-6.tag-title
@@ -23,12 +24,17 @@ block content
 							span.tag Vue
 							span.tag MongoDB
 						hr
-						.row
-							.col-md-12.date-time-picker#datetimepicker
+						.row.date-header
+							.col-md-6.date-title
+								span Date
+							.col-md-6.date-back
+								span(class='glyphicon glyphicon-chevron-left tag-back' aria-hidden='true')
+						.row.date-box
+							span.date 2017
 						hr
 						.row.copyright-box
 							p © Copyright 2017 - 2018 
-								a(href='localhost:3000' title='Xavier') Xavier
+							a(href='localhost:3000' title='Xavier') Xavier
 					.col-md-7.zone.brief-wrapper
 						.brief
 							h4 Happy New Year
@@ -103,15 +109,16 @@ block content
 					i(class='glyphicon glyphicon-arrow-up' aria-hidden='true')
 					span Up to top
 	script(type='text/javascript').
-		$('#datetimepicker').datetimepicker({
-			startView: 3,
-			minView: 3
-		});
-
 		$('#up-to-top').click(function() {
+
 			$('.content-wrapper').animate({scrollTop:0}, 500);
 		});
 
 		$('.up-to-top').click(function() {
 			$('.brief-wrapper').animate({scrollTop:0}, 500);
+		})
+
+		$('.jumbotron h1').click(function() {
+			$('.jumbotron').hide();
+			$('.container-fluid').show();
 		})
