@@ -2,6 +2,8 @@ extends layout
 
 block content
 	.jumbotron
+		.jumbotron-title
+			h2 Let it be
 	.container-fluid.hull-height
 		.row.hull-height
 			.col-md-4.zone.vice-wrapper
@@ -110,7 +112,6 @@ block content
 					span Up to top
 	script(type='text/javascript').
 		$('#up-to-top').click(function() {
-
 			$('.content-wrapper').animate({scrollTop:0}, 500);
 		});
 
@@ -118,7 +119,7 @@ block content
 			$('.brief-wrapper').animate({scrollTop:0}, 500);
 		})
 
-		$('.jumbotron h1').click(function() {
+		$('.jumbotron-title h2').click(function() {
 			$('.jumbotron').hide();
 			$('.container-fluid').show();
 		})

@@ -21,11 +21,23 @@ i {
 	margin-right: 5px;
 }
 
-.jumbotron{
+.jumbotron {
 	height: 100%;
 	margin: 0;
 	background: url('/images/jumbotron.jpg');
 	background-position: center center;
+}
+
+.jumbotron-title {
+    position: absolute;
+	top: 55%;
+	left: 58%;
+}
+
+.jumbotron-title h2 {
+	font-family: Raleway, sans-serif;
+	color: #fff;
+	cursor: pointer;
 }
 
 .container-fluid {
