@@ -24,8 +24,8 @@ i {
 .jumbotron {
 	height: 100%;
 	margin: 0;
-	background: url('/images/jumbotron.jpg');
-	background-position: center center;
+	background: url('/images/jumbotron.jpg') no-repeat center center fixed;
+	background-size: cover;
 }
 
 .jumbotron-title {
@@ -37,11 +37,6 @@ i {
 .jumbotron-title h2 {
 	font-family: Raleway, sans-serif;
 	color: #fff;
-	cursor: pointer;
-}
-
-.container-fluid {
-	display: none;
 }
 
 .hull-height {
